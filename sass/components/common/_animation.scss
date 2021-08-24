@@ -1,0 +1,19 @@
+.overlay, .backdrop, .check-icon {
+  transition: transform $anim-time $anim-func, opacity $anim-time $anim-func, visibility $anim-time $anim-func;
+}
+
+.btn, .link {
+  transition: color $anim-time $anim-func, box-shadow $anim-time $anim-func, background-color $anim-time $anim-func;
+}
+
+.icon, .btn-anim {
+  transition: background-color $anim-time $anim-func;
+}
+
+.social-icon, .company-icon, .close-icon, .checked-icon, .unchecked-icon, .form-icon {
+  transition: fill $anim-time $anim-func;
+}
+
+.company-box, .email, .input, .comment {
+  transition: border-color $anim-time $anim-func;
+}

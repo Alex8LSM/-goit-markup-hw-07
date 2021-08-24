@@ -1,0 +1,65 @@
+
+/*Cards*/
+.portfolio .type {
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.portfolio-card {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.portfolio-cards .list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.portfolio-cards {
+  margin-top: -30px;
+  margin-left: -30px;
+  flex-wrap: wrap;
+}
+
+.portfolio-card .title {
+  margin-bottom: 4px;
+}
+/*для применения теней*/
+.portfolio-cards .link {
+  display: block;
+}
+
+.portfolio-cards .link:focus,
+.portfolio-cards .link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-cards .image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay .text {
+  padding: 0 24px;
+  color: $hero-text;
+  font-size: 18px;
+  line-height: 1.556;
+}
+.portfolio-cards .overlay {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  bottom: -100%;
+  pointer-events: none;
+}
+
+.portfolio-cards .link:hover .overlay,
+.portfolio-cards .link:focus .overlay {
+  opacity: 1;
+  transform: translateY(-100%);
+}

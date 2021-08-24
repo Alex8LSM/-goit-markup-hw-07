@@ -1,0 +1,27 @@
+.our-works.section {
+  padding-top: 0px;
+}
+
+.our-works .label .title {
+  text-transform: uppercase;
+  color: $hero-text;
+  
+}
+
+.our-works .list {
+  position: relative;
+}
+
+.our-works .label {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);;
+  padding: 27px 0px;
+}
+
+.first.title {
+  font-size: 36px;
+  line-height: 1.167;
+  margin-bottom: 50px;
+}

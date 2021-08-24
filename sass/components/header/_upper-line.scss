@@ -1,0 +1,61 @@
+/*header*/
+.upper-line {
+  border-bottom: 1px solid #ececec;
+  padding: 25px 0;
+}
+
+.upper-line .list:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav-links {
+  margin-left: 93px;
+}
+
+.upper-line .list-box {
+  margin-left: auto;
+}
+
+.upper-line .list {
+  letter-spacing: 0.02em;
+  line-height: 1.172;
+  font-weight: 500;
+}
+
+.email-icon,
+.phone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.brand-color-one {
+  color: $pri-brand;
+}
+
+.upper-line .brand-color-two {
+  color: $sec-brand;
+}
+
+.nav-links .list {
+  color: $pri-link;
+}
+
+.contacts .list {
+  color: $pri-text;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: $accent;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  bottom: -33px;
+  left: 0;
+}

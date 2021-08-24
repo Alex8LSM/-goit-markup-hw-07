@@ -1,0 +1,44 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+
+.link.icon:hover,
+.link.icon:focus {
+  fill: $hero-text;
+  background-color: $accent;
+}
+
+.cap-btn,
+.contact-btn,
+.footer-btn{
+  cursor: pointer;
+  font-size: 16px;
+  background-color: $accent;
+  font-weight: bold;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $hero-text;
+
+  border: 0px;
+  border-radius: 4px;
+}
+
+.btn-anim:hover,
+.btn-anim:focus
+{
+  background-color: $btn-hover;
+
+}
+
+.link.active,
+.footer .link:focus,
+.footer .link:hover,
+.upper-line .link:focus,
+.upper-line .link:hover {
+  color: $accent;
+}

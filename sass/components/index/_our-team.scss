@@ -1,0 +1,39 @@
+.our-team {
+  background-color: $sec-section-bgc;
+}
+
+.our-team .list.card {
+  background-color: $pri-section-bgc;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-card {
+  padding: 30px 0;
+}
+
+.social-icons .list:not(:first-child) {
+  margin-left: 10px;
+}
+
+.our-team .social-icons {
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.our-team .social-icon, .company-icon {
+  fill: #afb1b8;
+}
+
+.our-team .icon:hover .social-icon,
+.our-team .icon:focus .social-icon{
+  fill: $hero-text;
+}
+
+.team-card.title,
+.team-card .profession {
+  font-size: 16px;
+  line-height: 1.188;
+}

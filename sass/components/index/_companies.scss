@@ -1,0 +1,28 @@
+
+.company-box {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.company-box:hover,
+.company-box:focus {
+  border-color: $accent;
+}
+
+.company-box:hover .company-icon,
+.company-box:focus .company-icon{
+  fill: $accent;
+}
+
+.customers-cards .list {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+}
+
+.customers-cards {
+  margin-left: -30px;
+}

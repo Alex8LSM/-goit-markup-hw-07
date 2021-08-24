@@ -1,0 +1,35 @@
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+
+.list-box {
+  list-style: none;
+
+  display: flex;
+}
+
+.main-content .title {
+  color: $pri-title;
+}

@@ -1,0 +1,20 @@
+
+.social-container {
+  width: 206px;
+  height: 80px;
+  margin: 15px 93px 0px 70px;
+}
+
+.social-container .title,
+.subscribe-form .title {
+  color: $ft-text;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer .icon {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-icon {
+  fill: $hero-text;
+}
