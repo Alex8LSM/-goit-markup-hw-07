@@ -3,7 +3,7 @@
   transition: transform $anim-time $anim-func, opacity $anim-time $anim-func, visibility $anim-time $anim-func;
 }
 
-.btn, .link, .email::placeholder, .comment::placeholder {
+.upper-line__link, .footer__link, .btn, .link, .email::placeholder, .comment::placeholder {
   transition: color $anim-time $anim-func, box-shadow $anim-time $anim-func, background-color $anim-time $anim-func;
 }
 

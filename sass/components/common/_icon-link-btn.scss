@@ -1,13 +1,4 @@
 /*common_icon-link-btn*/
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-}
-
 .link.icon:hover,
 .link.icon:focus {
   fill: $hero-text;
@@ -35,12 +26,4 @@
 {
   background-color: $btn-hover;
 
-}
-
-.link.active,
-.footer .link:focus,
-.footer .link:hover,
-.upper-line .link:focus,
-.upper-line .link:hover {
-  color: $accent;
 }

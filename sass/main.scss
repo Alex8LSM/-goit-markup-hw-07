@@ -5,13 +5,12 @@
 @import "./components/common/animation"; 
 @import "./components/common/hidden"; 
 @import "./components/common/icon-link-btn"; 
-@import "./components/common/other"; 
-@import "./components/common/brand"; 
+@import "./components/common/other";   
 @import "./utils/placeholders";
+@import "./utils/mixines";
 
 @import "./components/header/upper-line";
 
-@import "./components/footer/common";
 @import "./components/footer/address";
 @import "./components/footer/social";
 @import "./components/footer/subscribe";

@@ -1,4 +1,4 @@
-/*utild_placeholders*/
+/*utils_placeholders*/
 %form-input-focus {
   border-color: $accent;
   outline: none;
@@ -6,4 +6,32 @@
 
 %placeholder-onfocus {
     color: $accent;
+}
+
+%brand {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+}
+
+%flex-align {
+  display: flex;
+  align-items: center;
+}
+
+%focus_hover {
+  &:focus,
+  &:hover {
+    color: $accent; 
+  }
+}
+
+%icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
 }

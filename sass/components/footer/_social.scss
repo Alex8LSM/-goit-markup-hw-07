@@ -5,16 +5,17 @@
   margin: 15px 93px 0px 70px;
 }
 
-.social-container .title,
-.subscribe-form .title {
+.social-container__title,
+.subscribe-form__title {
   color: $ft-text;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.footer .icon {
+.social-container__icon {
+  @extend %icon;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer .social-icon {
+.social-container__social-icon {
   fill: $hero-text;
 }

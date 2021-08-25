@@ -1,23 +1,41 @@
 /*footer-adress*/
-.footer .brand-color-two {
-  color: $ter-brand;
+.footer-brand {
+   @extend %brand;
+   &__color-one {
+      color: $pri-brand;
+   }
+   &__color-two {
+      color: $ter-brand;
+   }
 }
+.footer {
+  padding: 60px 0;
+  background-color: $ter-section-bgc;
 
-.footer-address {
-  color: $ft-text;
-  font-style: normal;
+  &__container {
+    display: flex;
+  }
+
+    &__link {
+    @extend %focus_hover;
+  }
 }
 
 .address {
   margin-top: 20px;
   width: 231px;
-}
 
-.footer .list-box {
-  color: $footer-contacts;
-  font-style: normal;
-}
+  &__text {
+    color: $ft-text;
+    font-style: normal;
+  }
 
-.address .list {
-  margin-top: 9px;
+  &__list-box {
+    color: $footer-contacts;
+    font-style: normal;
+  }
+
+  &__list {
+    margin-top: 9px;
+  }
 }
