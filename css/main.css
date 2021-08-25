@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*utils_variables*/
+/*common_body*/
 body {
   background-color: #ffffff;
   color: #757575;
@@ -9,6 +11,7 @@ body {
   /*24px*/
 }
 
+/*common_reset*/
 h1,
 h2,
 h3,
@@ -29,6 +32,7 @@ img {
   color: inherit;
 }
 
+/*common_animation*/
 .overlay, .backdrop, .check-icon {
   -webkit-transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,7 +40,28 @@ img {
   transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1), opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn, .link {
+.btn, .link, .email::-webkit-input-placeholder, .comment::-webkit-input-placeholder {
+  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn, .link, .email:-ms-input-placeholder, .comment:-ms-input-placeholder {
+  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn, .link, .email::-ms-input-placeholder, .comment::-ms-input-placeholder {
+  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn, .link, .email::placeholder, .comment::placeholder {
   -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,6 +83,7 @@ img {
   transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*common_hidden*/
 .hidden {
   position: absolute;
   width: 1px;
@@ -69,6 +95,7 @@ img {
   clip: rect(0 0 0 0);
 }
 
+/*common_icon-link-btn*/
 .icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,6 +128,8 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   border: 0px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
@@ -117,6 +146,7 @@ img {
   color: #2196f3;
 }
 
+/*common_other*/
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,6 +191,13 @@ img {
   color: #212121;
 }
 
+.input:hover,
+.comment:hover,
+.email:hover {
+  cursor: pointer;
+}
+
+/*common_brand*/
 .brand {
   font-family: 'Raleway';
   font-weight: bold;
@@ -168,7 +205,30 @@ img {
   line-height: 1.192;
 }
 
-/*header*/
+/*utild_placeholders*/
+.email:focus, .contact-form .input:focus,
+.contact-form .comment:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.email:focus::-webkit-input-placeholder, .contact-form .comment:focus::-webkit-input-placeholder {
+  color: #2196f3;
+}
+
+.email:focus:-ms-input-placeholder, .contact-form .comment:focus:-ms-input-placeholder {
+  color: #2196f3;
+}
+
+.email:focus::-ms-input-placeholder, .contact-form .comment:focus::-ms-input-placeholder {
+  color: #2196f3;
+}
+
+.email:focus::placeholder, .contact-form .comment:focus::placeholder {
+  color: #2196f3;
+}
+
+/*header_upper-line*/
 .upper-line {
   border-bottom: 1px solid #ececec;
   padding: 25px 0;
@@ -230,7 +290,7 @@ img {
   left: 0;
 }
 
-/*footer*/
+/*footer_common*/
 .footer {
   padding: 60px 0;
 }
@@ -240,6 +300,7 @@ footer {
   background-color: #2f303a;
 }
 
+/*footer-adress*/
 .footer .brand-color-two {
   color: #ffffff;
 }
@@ -263,6 +324,7 @@ footer {
   margin-top: 9px;
 }
 
+/*footer_social*/
 .social-container {
   width: 206px;
   height: 80px;
@@ -284,6 +346,7 @@ footer {
   fill: #ffffff;
 }
 
+/*footer_subscribe*/
 .subscribe-form {
   width: 570px;
   height: 86px;
@@ -340,7 +403,7 @@ footer {
   right: 28px;
 }
 
-/*Стилі файлу index */
+/*index_common */
 .our-works .title,
 .our-team .title,
 .profession {
@@ -366,6 +429,7 @@ footer {
   font-size: inherit;
 }
 
+/*index_cap*/
 .cap {
   padding: 200px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/cap-bg-img.jpg);
@@ -391,6 +455,7 @@ footer {
   padding: 10px 32px;
 }
 
+/*index_features*/
 .features .list {
   width: 270px;
 }
@@ -404,6 +469,7 @@ footer {
   height: 120px;
 }
 
+/*index_our-works*/
 .our-works.section {
   padding-top: 0px;
 }
@@ -431,6 +497,7 @@ footer {
   margin-bottom: 50px;
 }
 
+/*index_our-team*/
 .our-team {
   background-color: #f5f4fa;
 }
@@ -475,6 +542,7 @@ footer {
   line-height: 1.188;
 }
 
+/*index_companies*/
 .company-box {
   display: block;
   width: 170px;
@@ -504,7 +572,7 @@ footer {
   margin-left: -30px;
 }
 
-/*Стилі форми бекдропа*/
+/*index_backdrop*/
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -579,19 +647,19 @@ footer {
   resize: none;
 }
 
-.comment::-webkit-input-placeholder {
+.contact-form .comment::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment:-ms-input-placeholder {
+.contact-form .comment:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::-ms-input-placeholder {
+.contact-form .comment::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::placeholder {
+.contact-form .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -681,19 +749,6 @@ footer {
   cursor: pointer;
 }
 
-.input:focus,
-.comment:focus,
-.email:focus {
-  border-color: #2196f3;
-  outline: none;
-}
-
-.input:hover,
-.comment:hover,
-.email:hover {
-  cursor: pointer;
-}
-
 .form-field:focus-within .form-icon {
   fill: #2196f3;
 }
@@ -703,8 +758,7 @@ footer {
   fill: #2196f3;
 }
 
-/*Стилі файлу portfolio*/
-/*Filters*/
+/*portfolio_filters*/
 .portfolio .title {
   font-size: 18px;
   line-height: 2;
@@ -719,7 +773,6 @@ footer {
 }
 
 .btn {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   height: 38px;
@@ -729,13 +782,7 @@ footer {
   border-radius: 4px;
 }
 
-.filters .list:not(:first-child) {
-  margin-left: 8px;
-}
-
-.btn-active,
-.btn:hover,
-.btn:focus {
+.btn-active, .btn:hover, .btn:focus {
   cursor: pointer;
   background-color: #2196f3;
   color: #ffffff;
@@ -743,7 +790,11 @@ footer {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*Cards*/
+.filters .list:not(:first-child) {
+  margin-left: 8px;
+}
+
+/*portfolio_cards*/
 .portfolio .type {
   font-size: 16px;
   line-height: 1.875;

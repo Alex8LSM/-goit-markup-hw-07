@@ -1,4 +1,4 @@
-/*Стилі форми бекдропа*/
+/*index_backdrop*/
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -67,10 +67,15 @@
   margin: 0;
   padding: 12px 16px;
   resize: none;
+      &::placeholder{
+        color: rgba(117, 117, 117, 0.5);
+      }
+      &:focus::placeholder {
+        @extend %placeholder-onfocus;
+      }
 }
-.comment::placeholder{
-  color: rgba(117, 117, 117, 0.5);
-}
+
+
 
 .contact-form .input,
 .contact-form .comment {
@@ -157,17 +162,9 @@
   cursor: pointer;
 }
 
-.input:focus,
-.comment:focus,
-.email:focus {
-  border-color: $accent;
-  outline: none;
-}
-
-.input:hover,
-.comment:hover,
-.email:hover {
-  cursor: pointer;
+.contact-form .input:focus,
+.contact-form .comment:focus {
+  @extend %form-input-focus;
 }
 
 .form-field:focus-within .form-icon {

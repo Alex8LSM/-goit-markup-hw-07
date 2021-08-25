@@ -1,0 +1,9 @@
+/*utild_placeholders*/
+%form-input-focus {
+  border-color: $accent;
+  outline: none;
+}
+
+%placeholder-onfocus {
+    color: $accent;
+}

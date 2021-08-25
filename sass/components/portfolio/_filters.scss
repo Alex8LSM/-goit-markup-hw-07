@@ -1,5 +1,4 @@
-/*Стилі файлу portfolio*/
-/*Filters*/
+/*portfolio_filters*/
 .portfolio .title {
   font-size: 18px;
   line-height: 2;
@@ -14,7 +13,6 @@
 }
 
 .btn {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   height: 38px;
@@ -22,19 +20,19 @@
   background-color: $btn-bgc;
   border-style: none;
   border-radius: 4px;
+
+    &-active,
+    &:hover,
+    &:focus {
+       cursor: pointer;
+       background-color: $accent;
+       color: $sec-btn-text;
+
+       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .filters .list:not(:first-child) {
   margin-left: 8px;
-}
-
-.btn-active,
-.btn:hover,
-.btn:focus {
-  cursor: pointer;
-  background-color: $accent;
-  color: $sec-btn-text;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }

@@ -1,4 +1,4 @@
-
+/*common_other*/
 .flex {
   display: flex;
   align-items: center;
@@ -32,4 +32,10 @@
 
 .main-content .title {
   color: $pri-title;
+}
+
+.input:hover,
+.comment:hover,
+.email:hover {
+  cursor: pointer;
 }
