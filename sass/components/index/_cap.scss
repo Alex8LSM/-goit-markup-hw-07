@@ -10,22 +10,24 @@
 
     &-btn {
       @extend %hero-btn;
+      padding: 10px 32px;
     }
-}
 
-.cap-title {
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $hero-text;
+    &__container {
+      @extend %flex-align;
+      flex-direction: column;
+    }
 
-  text-align: center;
-  margin-bottom: 30px;
-}
+    &__title {
+      width: 696px;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.364;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $hero-text;
 
-.cap-btn {
-   padding: 10px 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
 }

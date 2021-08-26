@@ -4,6 +4,7 @@
   height: 86px;
   margin-top: 15px;
   background-color: $ter-section-bgc;
+  @extend %flex-align;
   align-items: flex-end;
 }
 

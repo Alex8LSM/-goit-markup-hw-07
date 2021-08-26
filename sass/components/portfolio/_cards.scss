@@ -1,5 +1,8 @@
-
 /*portfolio_cards*/
+.portfolio-cards {
+
+}
+
 .portfolio .type {
   font-size: 16px;
   line-height: 1.875;
@@ -56,6 +59,7 @@
   opacity: 0;
   bottom: -100%;
   pointer-events: none;
+  @extend %flex-align;
 }
 
 .portfolio-cards .link:hover .overlay,

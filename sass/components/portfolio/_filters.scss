@@ -1,4 +1,11 @@
 /*portfolio_filters*/
+.portfolio {
+  &__container {
+    @extend %flex-align;
+    flex-direction: column;
+  }
+}
+
 .portfolio .title {
   font-size: 18px;
   line-height: 2;

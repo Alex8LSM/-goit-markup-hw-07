@@ -1,5 +1,6 @@
 /*utils_placeholders*/
-%form-input-focus {
+%form-input-focus,
+%border-focus {
   border-color: $accent;
   outline: none;
 }
