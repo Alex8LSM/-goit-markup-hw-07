@@ -16,8 +16,8 @@
     display: flex;
   }
 
-    &__link {
-    @extend %focus_hover;
+  &__link {
+  @extend %focus_hover;
   }
 }
 

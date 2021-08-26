@@ -1,10 +1,4 @@
 /*index_backdrop*/
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -16,6 +10,12 @@
   opacity: 1;
   visibility: visible;
   z-index: 1;
+
+  &--is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 }
 
 .contact-form {
@@ -28,6 +28,10 @@
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  &-btn {
+    @extend %hero-btn;
+  }
 }
 
 .close-btn {
@@ -75,8 +79,6 @@
       }
 }
 
-
-
 .contact-form .input,
 .contact-form .comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -84,6 +86,10 @@
   margin-top: 4px;
   position: relative;
   display: block;
+
+  &:focus {
+    @extend %form-input-focus;
+  }
 }
 
 .contact-form .input {
@@ -160,11 +166,6 @@
 
 .check-label:hover {
   cursor: pointer;
-}
-
-.contact-form .input:focus,
-.contact-form .comment:focus {
-  @extend %form-input-focus;
 }
 
 .form-field:focus-within .form-icon {

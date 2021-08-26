@@ -34,4 +34,30 @@
   height: 44px;
   width: 44px;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    fill: $hero-text;
+    background-color: $accent;
+  }
+}
+
+%hero-btn{
+  cursor: pointer;
+  font-size: 16px;
+  background-color: $accent;
+  font-weight: bold;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $hero-text;
+
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &:focus,
+  &:hover {
+    background-color: $btn-hover;
+  }
+
 }

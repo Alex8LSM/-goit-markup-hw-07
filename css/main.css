@@ -1,16 +1,5 @@
 @charset "UTF-8";
 /*utils_variables*/
-/*common_body*/
-body {
-  background-color: #ffffff;
-  color: #757575;
-  font-family: "Roboto", "Raleway", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.714;
-  /*24px*/
-}
-
 /*common_reset*/
 h1,
 h2,
@@ -34,6 +23,77 @@ a {
 
 ul {
   list-style: none;
+}
+
+/*common_other*/
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: "Roboto", "Raleway", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.714;
+  /*24px*/
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.list-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .title {
+  color: #212121;
+}
+
+.input:hover,
+.comment:hover,
+.email:hover {
+  cursor: pointer;
 }
 
 /*common_animation*/
@@ -85,96 +145,6 @@ ul {
 .company-box, .email, .input, .comment {
   -webkit-transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*common_hidden*/
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-/*common_icon-link-btn*/
-.link.icon:hover,
-.link.icon:focus {
-  fill: #ffffff;
-  background-color: #2196f3;
-}
-
-.cap-btn,
-.contact-btn,
-.footer-btn {
-  cursor: pointer;
-  font-size: 16px;
-  background-color: #2196f3;
-  font-weight: bold;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  border: 0px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.btn-anim:hover,
-.btn-anim:focus {
-  background-color: #188ce8;
-}
-
-/*common_other*/
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.col {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-  margin: 0 auto;
-}
-
-.list-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-content .title {
-  color: #212121;
-}
-
-.input:hover,
-.comment:hover,
-.email:hover {
-  cursor: pointer;
 }
 
 /*utils_placeholders*/
@@ -233,6 +203,29 @@ ul {
   height: 44px;
   width: 44px;
   border-radius: 50%;
+}
+
+.social-container__icon:hover, .social-container__icon:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+
+.footer-btn, .cap-btn, .contact-form-btn {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #2196f3;
+  font-weight: bold;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: 0px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-btn:focus, .cap-btn:focus, .contact-form-btn:focus, .footer-btn:hover, .cap-btn:hover, .contact-form-btn:hover {
+  background-color: #188ce8;
 }
 
 /*header_upper-line*/
@@ -434,8 +427,8 @@ ul {
 }
 
 .features .title,
-.social-container__title,
-.subscribe-form__title {
+.social-container .title,
+.subscribe-form .title {
   text-transform: uppercase;
   line-height: 1.172;
   font-size: inherit;
@@ -586,12 +579,6 @@ ul {
 }
 
 /*index_backdrop*/
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -603,6 +590,12 @@ ul {
   opacity: 1;
   visibility: visible;
   z-index: 1;
+}
+
+.backdrop--is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .contact-form {

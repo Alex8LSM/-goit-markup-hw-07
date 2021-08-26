@@ -1,4 +1,24 @@
 /*common_other*/
+body {
+  background-color: $body-bgc;
+  color: $pri-text;
+  font-family: $main-font, $secondary-font, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.714; /*24px*/
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
 .flex {
   display: flex;
   align-items: center;

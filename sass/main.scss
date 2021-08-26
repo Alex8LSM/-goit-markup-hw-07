@@ -1,11 +1,9 @@
 //.box:hover .button = .button {.box:hover &}
 @import "./utils/variables"; 
-@import "./components/common/body"; 
 @import "./components/common/reset"; 
+@import "./components/common/other"; 
 @import "./components/common/animation"; 
-@import "./components/common/hidden"; 
-@import "./components/common/icon-link-btn"; 
-@import "./components/common/other";   
+  
 @import "./utils/placeholders";
 @import "./utils/mixines";
 
