@@ -1,13 +1,4 @@
 /*footer-adress*/
-.footer-brand {
-   @extend %brand;
-   &__color-one {
-      color: $pri-brand;
-   }
-   &__color-two {
-      color: $ter-brand;
-   }
-}
 .footer {
   padding: 60px 0;
   background-color: $ter-section-bgc;
@@ -17,7 +8,17 @@
   }
 
   &__link {
-  @extend %focus_hover;
+    @extend %focus_hover;
+  }
+}
+
+.footer-brand {
+  @extend %brand;
+  &__color-one {
+    color: $pri-brand;
+  }
+  &__color-two {
+    color: $ter-brand;
   }
 }
 

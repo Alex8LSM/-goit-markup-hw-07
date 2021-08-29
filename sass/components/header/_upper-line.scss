@@ -32,7 +32,7 @@
   }
   &__link {
     @extend %focus_hover;
-    @extend %flex-align
+    @extend %flex-align;
   }
 
   &__active-page {

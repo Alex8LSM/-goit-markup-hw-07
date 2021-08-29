@@ -16,7 +16,7 @@ body {
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  clip: rect(0 0 0 0);
 }
 
 .section {
@@ -30,17 +30,35 @@ body {
   margin: 0 auto;
 }
 
-
 .list-box {
   display: flex;
 }
 
-.main-content .title {
-  color: $pri-title;
+.our-features,
+.team-card,
+.contact-form,
+.portfolio-card {
+  &__title {
+    color: $pri-title;
+  }
 }
 
-.input:hover,
-.comment:hover,
-.email:hover {
-  cursor: pointer;
+.input,
+.comment,
+.email {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.social-icons {
+  &__list {
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__icon {
+    @extend %icon;
+  }
 }

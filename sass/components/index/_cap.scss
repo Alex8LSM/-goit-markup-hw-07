@@ -8,26 +8,26 @@
   margin-right: auto;
   background-color: $ter-section-bgc;
 
-    &-btn {
-      @extend %hero-btn;
-      padding: 10px 32px;
-    }
+  &-btn {
+    @extend %hero-btn;
+    padding: 10px 32px;
+  }
 
-    &__container {
-      @extend %flex-align;
-      flex-direction: column;
-    }
+  &__container {
+    @extend %flex-align;
+    flex-direction: column;
+  }
 
-    &__title {
-      width: 696px;
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.364;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: $hero-text;
+  &__title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $hero-text;
 
-      text-align: center;
-      margin-bottom: 30px;
-    }
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }

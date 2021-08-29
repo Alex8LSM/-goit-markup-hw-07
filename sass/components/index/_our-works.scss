@@ -1,28 +1,33 @@
 /*index_our-works*/
-.our-works.section {
-  padding-top: 0px;
-}
+.our-works {
+  &--geometry {
+    padding-top: 0px;
+  }
+  &__first-title {
+    @extend %first-title;
+  }
 
-.our-works .label .title {
-  text-transform: uppercase;
-  color: $hero-text;
-  
-}
+  &__work {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
 
-.our-works__list {
-  position: relative;
-}
+  &__label {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 0px;
+    text-align: center;
+  }
 
-.our-works .label {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  background-color: rgba(47, 48, 58, 0.8);;
-  padding: 27px 0px;
-}
+  &__title {
+    text-transform: uppercase;
+    color: $hero-text;
+  }
 
-.first.title {
-  font-size: 36px;
-  line-height: 1.167;
-  margin-bottom: 50px;
+  &__work {
+    position: relative;
+  }
 }
