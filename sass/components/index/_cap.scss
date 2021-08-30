@@ -8,7 +8,7 @@
   margin-right: auto;
   background-color: $ter-section-bgc;
 
-  &-btn {
+  &__order-btn {
     @extend %hero-btn;
     padding: 10px 32px;
   }

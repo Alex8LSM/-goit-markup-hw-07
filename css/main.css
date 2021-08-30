@@ -131,6 +131,7 @@ body {
   transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*New*/
 /*utils_placeholders*/
 .subscribe-form__email:focus, .form-field__input:focus, .form-field__comment:focus,
 .company-label:hover,
@@ -239,6 +240,37 @@ body {
   margin-top: 4px;
   position: relative;
   display: block;
+}
+
+/*Animation placeholders*/
+.subscribe-form__email::-webkit-input-placeholder,
+.form-field__comment::-webkit-input-placeholder, .upper-line__link,
+.footer__link {
+  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-form__email:-ms-input-placeholder,
+.form-field__comment:-ms-input-placeholder, .upper-line__link,
+.footer__link {
+  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-form__email::-ms-input-placeholder,
+.form-field__comment::-ms-input-placeholder, .upper-line__link,
+.footer__link {
+  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-form__email::placeholder,
+.form-field__comment::placeholder, .upper-line__link,
+.footer__link {
+  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-form__email, .form-field__input, .form-field__comment, .company-label {
+  -webkit-transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*header_upper-line*/

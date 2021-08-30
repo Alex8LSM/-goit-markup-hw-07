@@ -89,3 +89,36 @@
   position: relative;
   display: block;
 }
+
+/*Animation placeholders*/
+%color{
+  transition: color $anim-time $anim-func;
+}
+
+%background-color {
+  transition: background-color $anim-time $anim-func;
+}
+
+%border-color {
+  transition: border-color $anim-time $anim-func;
+}
+
+%fill {
+  transition: fill $anim-time $anim-func;
+}
+
+%box-shadow {
+  transition: box-shadow $anim-time $anim-func;
+}
+
+%transform  {
+  transition: transform $anim-time $anim-func;
+}
+
+%opacity {
+  transition: opacity $anim-time $anim-func; 
+}
+
+%visibility{
+  transition: visibility $anim-time $anim-func;
+}

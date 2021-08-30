@@ -18,3 +18,29 @@
 .company-box, .email, .input, .comment {
   transition: border-color $anim-time $anim-func;
 }
+
+/*New*/
+.subscribe-form__email, .form-field__input,
+.form-field__comment, .company-label {
+  @extend %border-color;
+}
+
+.subscribe-form__email::placeholder,
+.form-field__comment::placeholder {
+  @extend %color;
+}
+
+.upper-line__link, 
+.footer__link, 
+.upper-line__link, 
+.footer__link {
+  @extend %color;
+}
+
+.social-icons__icon {
+  @extend background-color;
+}
+
+.subscribe-form__btn, .cap__order-btn-btn:focus, .contact-form__send-btn:focus, .subscribe-form__btn:hover, .cap-btn:hover, .contact-form__send-btn:hover {
+  @extend %background-color;
+}
