@@ -193,61 +193,61 @@ body {
 
 /*Animation placeholders*/
 .upper-line__link, .footer__link, .subscribe-form__email::-webkit-input-placeholder, .form-field__comment::-webkit-input-placeholder {
-  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .upper-line__link, .footer__link, .subscribe-form__email:-ms-input-placeholder, .form-field__comment:-ms-input-placeholder {
-  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .upper-line__link, .footer__link, .subscribe-form__email::-ms-input-placeholder, .form-field__comment::-ms-input-placeholder {
-  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .upper-line__link, .footer__link, .subscribe-form__email::placeholder, .form-field__comment::placeholder {
-  -webkit-transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cap__order-btn, .social-icons__icon, .subscribe-form__btn, .contact-form__send-btn {
-  -webkit-transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-label, .subscribe-form__email, .form-field__input, .form-field__comment {
-  -webkit-transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-card__social-icon, .company-label__icon, .contact-form__close-icon, .form-field__form-icon, .check-block__checked-icon, .check-block__unchecked-icon {
-  -webkit-transition: fill 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card {
-  -webkit-transition: -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters__filter-btn {
-  -webkit-transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), color 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1), color 2000ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay {
-  -webkit-transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), transform 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
-  -webkit-transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*header_upper-line*/
