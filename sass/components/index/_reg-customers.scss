@@ -10,10 +10,6 @@
   &__first-title {
     @extend %first-title;
   }
-
-  &__icon {
-    fill: #afb1b8;
-  }
 }
 
 .company-label {
@@ -23,12 +19,16 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
+  
+  &__icon {
+    fill: #afb1b8;
+  }
 
   &:hover,
   &:focus {
     @extend %border-focus;
 
-    & .reg-customers__icon {
+    .company-label__icon {
       fill: $accent;
     }
   }

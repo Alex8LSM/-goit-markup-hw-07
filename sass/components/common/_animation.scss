@@ -1,46 +1,102 @@
 /*common_animation*/
-.overlay, .backdrop, .check-icon {
-  transition: transform $anim-time $anim-func, opacity $anim-time $anim-func, visibility $anim-time $anim-func;
+.upper-line {
+  &__link {
+    @extend %color;
+  }
 }
 
-.upper-line__link, .footer__link, .btn, a, .email::placeholder, .comment::placeholder {
-  transition: color $anim-time $anim-func, box-shadow $anim-time $anim-func, background-color $anim-time $anim-func;
+.footer {
+  &__link {
+    @extend %color;
+  }
 }
 
-.icon, .btn-anim {
-  transition: background-color $anim-time $anim-func;
+.cap {
+  &__order-btn {
+    @extend %background-color;
+  }
 }
 
-.social-icon, .company-icon, .close-icon, .checked-icon, .unchecked-icon, .form-icon {
-  transition: fill $anim-time $anim-func;
+.team-card {
+  &__social-icon {
+    @extend %fill;
+  }
 }
 
-.company-box, .email, .input, .comment {
-  transition: border-color $anim-time $anim-func;
+.social-icons {
+  &__icon {
+    @extend %background-color;
+  }
 }
 
-/*New*/
-.subscribe-form__email, .form-field__input,
-.form-field__comment, .company-label {
+.company-label {
   @extend %border-color;
+  &__icon {
+    @extend %fill;
+  }
 }
 
-.subscribe-form__email::placeholder,
-.form-field__comment::placeholder {
-  @extend %color;
+.subscribe-form {
+  &__email {
+    @extend %border-color;
+    &::placeholder {
+      @extend %color;
+    }
+  }
+
+  &__btn {
+    @extend %background-color;
+  }
 }
 
-.upper-line__link, 
-.footer__link, 
-.upper-line__link, 
-.footer__link {
-  @extend %color;
+.backdrop {
+  @extend %backdrop;
 }
 
-.social-icons__icon {
-  @extend background-color;
+.contact-form {
+  &__send-btn {
+    @extend %background-color;
+  }
+
+  &__close-icon {
+    @extend %fill;
+  }
 }
 
-.subscribe-form__btn, .cap__order-btn-btn:focus, .contact-form__send-btn:focus, .subscribe-form__btn:hover, .cap-btn:hover, .contact-form__send-btn:hover {
-  @extend %background-color;
+.form-field {
+  &__input {
+    @extend %border-color;
+  }
+
+  &__form-icon {
+    @extend %fill;
+  }
+
+  &__comment {
+    @extend %border-color;
+    &::placeholder {
+      @extend %color;
+    }
+  }
+}
+
+.check-block {
+  &__checked-icon,
+  &__unchecked-icon {
+    @extend %fill;
+  }
+}
+
+.filters {
+  &__filter-btn {
+    @extend %filter-btn-anim;
+  }
+}
+
+.portfolio-card {
+  @extend %box-shadow;
+}
+
+.overlay {
+  @extend %overlay;
 }

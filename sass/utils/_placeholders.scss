@@ -111,14 +111,14 @@
   transition: box-shadow $anim-time $anim-func;
 }
 
-%transform  {
-  transition: transform $anim-time $anim-func;
+%filter-btn-anim {
+  transition: background-color $anim-time $anim-func, color $anim-time $anim-func, box-shadow $anim-time $anim-func;
 }
 
-%opacity {
-  transition: opacity $anim-time $anim-func; 
+%overlay {
+  transition: opacity $anim-time $anim-func, transform $anim-time $anim-func;
 }
 
-%visibility{
-  transition: visibility $anim-time $anim-func;
+%backdrop {
+  transition: opacity $anim-time $anim-func, visibility $anim-time $anim-func;
 }
